@@ -1,14 +1,14 @@
 # Simulatore di Circuiti Quantistici
 
 
-## DESCRIZIONE DEL PROGETTO
+## Descrizione del Progeto
 Questo progetto è un programma C multi-thread progettato per simulare semplici circuiti quantistici. 
 La simulazione è divisa in due fasi:
 1.Evoluzione unitaria: lo stato del circuito evolve secondo l'applicazione di matrici (porte quantistiche).Il calcolo del prodotto matrice-vettore è implementato in modalità multi-thread.
 2.Misurazione: se richiesta, stima la distribuzione di probabilità dell'uscita del circuito tramite campionamento.
 
 
-## FILE INCLUSI
+## File inclusi
 Il codice è stato modularizzato per massimizzare la chiarezza dell'architettura:
 
 ### main.c: 
@@ -28,9 +28,9 @@ Libreria matematica che implementa le funzioni dell'header complex_math.h per la
 Script per la compilazione automatica del progetto.
 
 
-## MANUALE UTENTE
+## Manuale utente
 
-### COMPILAZIONE
+### Compilazione
 Per compilare il progetto, posizionarsi nella cartella contenente i sorgenti e digitare il seguente comando sul terminale: make
 
 Questo genererà l'eseguibile chiamato 'main' (oltre ai file oggetto). 
@@ -39,7 +39,7 @@ Per ripulire la cartella dai file compilati, eseguire: 'make clean'.
 
 
 
-## ESECUZIONE E LINEA DI COMANDO
+## Esecuzione da linea di comando
 I dati di ingresso sono specificati dall'utente nella linea di comando. 
 È obbligatorio specificare il numero di thread tramite l'opzione '-t' e specificare il file con la quantità di qubits prima del file con la definizione delle matrici.
 
@@ -49,7 +49,7 @@ I dati di ingresso sono specificati dall'utente nella linea di comando.
 ### Esempio d'uso:
 ./main input_circuito.txt struttura_circuito.txt -t 4
 
-### FORMATO DI OUTPUT
+### Formato di output
 Il programma stampa i risultati sullo standard output (stdout).
 Se il file di input NON contiene la direttiva 'measure': stamperà lo 
 stato finale (vettore di numeri complessi) nello stesso formato dello stato iniziale.
