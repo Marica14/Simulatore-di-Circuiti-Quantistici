@@ -55,3 +55,7 @@ Se il file di input NON contiene la direttiva 'measure': stamperà lo
 stato finale (vettore di numeri complessi) nello stesso formato dello stato iniziale.
 
 Se il file di input contiene la direttiva 'measure' stamperà la distribuzione di probabilità stimata per i vari stati, indicando la codifica binaria e la probabilità (es. 01 @ 0.40).
+
+## Licensa
+
+Questo progetto è stato sviluppato per il corso di Sistemi Operativi modulo II.
